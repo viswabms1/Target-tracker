@@ -94,7 +94,7 @@ with tab2:
                 target_df = pd.concat([target_df, pd.DataFrame([new_row])], ignore_index=True)
                 target_df.to_csv(TARGET_PLAN_PATH, index=False)
                 st.success("✅ Target added.")
-                st.experimental_rerun()
+                st.rerun()
 
     # Editable target table
     st.subheader("📋 All Targets")
